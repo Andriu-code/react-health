@@ -49,14 +49,14 @@ function SignIn() {
                         </Row>
                         <Row>
                             <Col md={8}>
-                                <Link className="link">
+                                <Link className="link" to="/forget">
                                     Forget your password?
                                 </Link>
                             </Col>
                         </Row>
                         <Row>
                             <Col md={8}>
-                                <Link className="link">
+                                <Link className="link" to="/signup">
                                     Sign up and go to the shop!
                                 </Link>
                             </Col>

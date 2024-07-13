@@ -19,9 +19,9 @@ const Logobar = ({ totalProducts }) => {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    <img src={logo} alt="logo" width="100" height="100" />
+                    <img className='logo-img' src={logo} alt="logo" />
                 </Link>
-                <div>
+                <div className="search">
                     <Searchbar onSearch={handleSearch} />
                 </div>
                 <div className="menu-icon">

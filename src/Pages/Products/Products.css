@@ -8,3 +8,30 @@
    width: 66%;
     
 }
+
+@media (max-width: 1024px) {
+   .containerProducts {
+      margin-left: 30%;
+      margin-right: 10%;
+      margin-top: -30%;
+      width: 80%;
+   }
+}
+
+@media (max-width: 768px) {
+   .containerProducts {
+      margin-left: 15%;
+      margin-right: 5%;
+      margin-top: 50%;
+      width: 80%;
+   }
+}
+
+@media (max-width: 480px) {
+   .containerProducts {
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-top: 55%;
+      width: 85%;
+   }
+}

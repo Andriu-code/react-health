@@ -33,3 +33,35 @@
     background-color: #f4f4f4;
     
 }
+
+@media (max-width: 768px) {
+    .container-slide {
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+        align-items: flex-start;
+        /* Alinea los elementos al inicio */
+    }
+
+    .container-card {
+        width: 100%;
+        /* Ajusta el ancho para ocupar todo el espacio disponible */
+        margin-bottom: 10%;
+        /* Añade margen inferior si es necesario */
+    }
+
+    .img {
+        margin-left: 0;
+        /* Elimina el margen izquierdo */
+        margin-bottom: 2%;
+        /* Añade margen inferior si es necesario */
+        transform: none;
+        /* Elimina la transformación */
+    }
+
+    .opinion-container {
+        height: auto;
+        /* Ajusta la altura automática */
+        margin-bottom: 5%;
+        /* Añade margen inferior si es necesario */
+    }
+}

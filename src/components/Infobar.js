@@ -11,7 +11,6 @@ const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-color: #004d3d;
-  
   width: 100%;
   color: #000;
   border-radius: 12px;
@@ -20,7 +19,12 @@ const NavbarContainer = styled.nav`
  
 
   @media (max-width: 768px) {
-      margin: 0 0.5rem; /* Ajusta el margen horizontal en pantallas pequeñas */
+    height: auto;
+    flex-direction: column; /* Cambiar la dirección del flex a columna */
+    align-items: flex-start; /* Alinear los elementos al inicio */
+    padding: 1rem; /* Agregar padding si es necesario */
+    border-radius: 0; /* Quitar el borde redondeado */
+    box-shadow: none;
     }
 `;
 
@@ -34,7 +38,10 @@ const NavLinks = styled.div`
 
 
     @media (max-width: 768px) {
-      margin: 0.5rem 0;
+     
+      display: flex;
+   margin-left: 3%;
+   width: 260px;
     }
 `;
 
@@ -42,6 +49,12 @@ const NavInfoLinks = styled.div`
 display: flex;
    margin-left: 3%;
    width: 260px;
+
+   @media (max-width: 768px) {
+   flex-direction: column; /* Cambiar la dirección del flex a columna si es necesario */
+    margin-left: 0; /* Ajustar el margen izquierdo */
+    width: 100%;
+   }
 `;
 
 

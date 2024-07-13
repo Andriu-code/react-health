@@ -31,6 +31,30 @@
     margin-top: 5px;
 }
 
-.product-rating .fa-star {
-    
+@media (max-width: 768px) {
+    .product-slide {
+        flex-wrap: wrap;
+        /* Ajusta el comportamiento de envoltura */
+    }
+
+    .product {
+        width: 45%;
+        /* Ajusta el ancho para ocupar el espacio disponible */
+        margin-bottom: 5%;
+        /* Añade margen inferior si es necesario */
+    }
+
+    .product img {
+        width: 100%;
+        /* Ajusta el ancho de la imagen para ocupar todo el contenedor */
+    }
+
+    .product-name {
+        width: 100%;
+        /* Ajusta el ancho para ocupar todo el contenedor */
+        text-align: center;
+        /* Centra el texto */
+        margin-top: 5px;
+        /* Añade margen superior */
+    }
 }

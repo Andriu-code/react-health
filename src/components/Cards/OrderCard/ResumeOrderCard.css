@@ -27,3 +27,107 @@
     margin-bottom: 5%;
 
 }
+
+@media (max-width: 1024px) {
+    .container-order {
+        display: flex;
+        width: 50%;
+        /* Ajusta el ancho según sea necesario */
+        height: auto;
+        /* Permitir que la altura sea automática */
+        padding: 5%;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        
+    }
+
+    .title {
+        display: flex;
+        margin-bottom: 15%;
+    }
+
+    .linea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+
+    .boton {
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .container-order {
+        display: flex;
+        width: 70%;
+        /* Ajusta el ancho según sea necesario */
+        height: auto;
+        /* Permitir que la altura sea automática */
+        padding: 5%;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+
+    .title {
+        display: flex;
+        margin-bottom: 15%;
+    }
+
+    .linea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    .boton {
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .container-order {
+        display: flex;
+        width: 90%;
+        /* Ajusta el ancho según sea necesario */
+        height: auto;
+        /* Permitir que la altura sea automática */
+        padding: 5%;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+
+    .title {
+        display: flex;
+        margin-bottom: 15%;
+    }
+
+    .linea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    .boton {
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+}

@@ -11,14 +11,12 @@
     margin-top: -26%;
     justify-content: space-between;
     margin-bottom: 5%;
-    
 }
 
 .offer1 {
     width: 600px;
     height: 400px;
     border-radius: 15px;
-    
 }
 
 .offer2 {
@@ -75,12 +73,11 @@
     display: flex;
     flex-direction: row;
     margin-top: 5%;
-
 }
 
 .announce {
     display: flex;
-    width: 40%; 
+    width: 40%;
     flex-direction: column;
     margin-left: -6%;
 }
@@ -88,4 +85,213 @@
 .image {
     width: 100%;
     margin-bottom: 3%;
+}
+
+/* Media Query para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    .containerOffer {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        top: 0;
+        justify-content: center;
+    }
+
+    .offer1,
+    .offer2 {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+
+    .infobar {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recently-title {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    .new-title {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .new-title .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .carrousel-prod {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container-recipe {
+        flex-direction: column;
+        margin-top: 2%;
+        width: 90%;
+    }
+
+    .announce {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+
+    .image {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .containerHome {
+        flex-direction: column;
+    }
+
+    .containerOffer {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        top: 0;
+        justify-content: center;
+    }
+
+    .offer1,
+    .offer2 {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+
+    .infobar {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recently-title {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    .new-title {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .new-title .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .carrousel-prod {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container-recipe {
+        flex-direction: column;
+        margin-top: 2%;
+        width: 90%;
+    }
+
+    .announce {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+
+    .image {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .containerHome {
+        flex-direction: column;
+    }
+
+    .containerOffer {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        top: 0;
+        justify-content: center;
+    }
+
+    .offer1,
+    .offer2 {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+
+    .infobar {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recently-title {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .new-title {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .new-title .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .carrousel-prod {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-recipe {
+        flex-direction: column;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .announce {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+
+    .image {
+        width: 100%;
+        margin-bottom: 5%;
+    }
 }

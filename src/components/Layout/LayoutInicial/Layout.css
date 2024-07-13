@@ -11,3 +11,34 @@
     padding: 2%;
     background: #fff;
 }
+
+/* Media Query para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    .layout {
+        /* Puedes añadir ajustes específicos si los necesitas */
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .layout {
+        /* Puedes añadir ajustes específicos si los necesitas */
+    }
+
+    .content {
+        padding: 5%;
+        /* Ejemplo de ajuste de relleno para pantallas pequeñas */
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .layout {
+        /* Puedes añadir ajustes específicos si los necesitas */
+    }
+
+    .content {
+        padding: 10%;
+        /* Ejemplo de ajuste de relleno para pantallas extra pequeñas */
+    }
+}

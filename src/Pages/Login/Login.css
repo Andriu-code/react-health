@@ -33,3 +33,54 @@
     justify-content: center;
 }
 
+@media (max-width: 1024px) {
+    .login {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -20%;
+        width: 80%;
+    }
+
+    .login-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -15%;
+        width: 90%;
+    }
+
+    .login-box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: -10%;
+        width: 96%;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+
+    .input-login {
+        margin-top: 10%;
+    }
+
+    .login-box button {
+        margin-top: 20%;
+    }
+
+    .link {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}

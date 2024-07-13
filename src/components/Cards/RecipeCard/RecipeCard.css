@@ -45,3 +45,33 @@
 .instructions p {
     text-align: left;
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Ajusta el ancho para ocupar todo el espacio disponible */
+        margin-left: 5%;
+        /* Ajusta el margen izquierdo */
+        margin-right: 5%;
+        /* Ajusta el margen derecho */
+    }
+
+    .img-recipe {
+        margin-right: 0;
+        /* Elimina el margen derecho */
+    }
+
+    .ingredients,
+    .instructions {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .ingredients h5,
+    .ingredients p,
+    .instructions h5,
+    .instructions p {
+        text-align: left;
+        /* Ajusta el texto a la izquierda */
+    }
+}

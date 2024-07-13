@@ -25,7 +25,12 @@ const NavbarContainer = styled.nav`
  
 
   @media (max-width: 768px) {
-      margin: 0 0.5rem; /* Ajusta el margen horizontal en pantallas pequeñas */
+    flex-direction: column; 
+    width: 100%;
+    margin: 0; 
+    padding: 1rem; 
+    border-radius: 0; 
+
     }
 `;
 
@@ -36,7 +41,8 @@ const NavLinks = styled.div`
     color: #000;
 
     @media (max-width: 768px) {
-      margin: 0.5rem 0;
+    text-decoration: underline;
+    color: #333;
     }
   }
 `;

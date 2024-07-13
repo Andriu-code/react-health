@@ -1,5 +1,6 @@
 import React from 'react';
 import './SignUp.css';
+import Layout from '../../components/Layout/LayoutInicial/Layout';
 import OrangeButton from '../../components/Button/OrangeButton';
 import { Form, Row, Col, Input, FormGroup, Label, Button } from 'reactstrap';
 
@@ -7,6 +8,7 @@ import { Form, Row, Col, Input, FormGroup, Label, Button } from 'reactstrap';
 function SignUp() {
     return (
         <div>
+            <Layout open={true} />
             <div className='login'>
                 <h1>Sign Up</h1>
                 <div className='login-box'>

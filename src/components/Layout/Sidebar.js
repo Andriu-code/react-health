@@ -9,9 +9,9 @@ const SidebarContainer = styled.div`
   height: auto;
   background-color: #fff;
   color: black;
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: absolute;
+  flex-direction: column;
   transition: transform 0.3s ease;
   top: 125%;
   border-radius: 12px;
@@ -20,10 +20,22 @@ const SidebarContainer = styled.div`
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 5%;
 
+  
+
   @media (max-width: 768px) {
-    width: 150px;
-    
-    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
+    width: 100%; /* Ajuste de ancho para pantallas pequeñas */
+    top: 605%; /* Ajuste de posición superior */
+    border-radius: 0; /* Eliminar borde redondeado */
+    padding-top: 2%; /* Ajuste de relleno superior */
+    padding-bottom: 2%; /* Ajuste de relleno inferior */
+    margin-bottom: 10%; /* Ajuste de margen inferior */
+
+    transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')}; /* Transición de apertura/cierre */
+  }
+
+  @media (max-width: 480px) {
+    width: 100%; /* Ajuste de ancho para pantallas extra pequeñas */
+    margin-top: 70%;
   }
 `;
 
@@ -35,6 +47,18 @@ const SidebarLink = styled(Link)`
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 1024px) {
+    margin: 3% 5%; /* Ajuste de márgenes para pantallas medianas */
+  }
+
+  @media (max-width: 768px) {
+    margin: 3% 3%; /* Ajuste de márgenes para pantallas pequeñas */
+  }
+
+  @media (max-width: 480px) {
+    margin: 3% 2%; /* Ajuste de márgenes para pantallas extra pequeñas */
   }
 `;
 
@@ -62,9 +86,6 @@ const Sidebar = ({ categoriesArray, start, elements }) => {
 
   return (
     <>
-      <ToggleButton onClick={() => setOpen(!open)}>
-        {open ? 'Close' : 'Menu'}
-      </ToggleButton>
       <SidebarContainer open={open}>
         {categoriesView.map((category) => (
           <>

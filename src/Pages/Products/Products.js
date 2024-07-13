@@ -53,7 +53,7 @@ const Products = ({ getProducts }) => {
 
     return (
         <div>
-            <Layout array={categories} start={0} elements={categories.length} />
+            <Layout open={true} array={categories} start={0} elements={categories.length} />
             <div className="containerProducts">
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product} />
